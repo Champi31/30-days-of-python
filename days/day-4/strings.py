@@ -35,3 +35,12 @@ print (company.rindex(Cd))
 print (company.rfind(Cd))
 print (company.find(Cd))
 print (company.replace('Coding', 'Python'))
+print (company.replace('Coding', 'Everyone'))
+print (company.split())
+companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+print (companies.split())
+print (company[0])
+print (company[-1])
+print (company[10])
+PFE = 'Python For Everyone'
+print 
