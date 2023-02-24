@@ -43,4 +43,17 @@ print (company[0])
 print (company[-1])
 print (company[10])
 PFE = 'Python For Everyone'
-print 
+print (''.join(w[0] for w in PFE.split()))
+print (''.join(w[0] for w in company.split()))
+print (company.index('C'))
+print (company.index('F'))
+company1 = 'Coding For All People'
+print (company.rfind('I'))
+sentences = 'You cannot end a sentence with because because because is a conjuntion'
+because1 = 'because'
+print (sentences.find(because1))
+because3 = 'because'
+print (sentences.rindex(because3))
+all_because = slice(31, 54)
+print (sentences[all_because])
+print (sentences.index(because1))
