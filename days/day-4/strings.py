@@ -54,6 +54,6 @@ because1 = 'because'
 print (sentences.find(because1))
 because3 = 'because'
 print (sentences.rindex(because3))
-all_because = slice(31, 54)
-print (sentences[all_because])
-print (sentences.index(because1))
+all_because = sentences[0:30]
+all_because1 = sentences[54:71]
+print (all_because + all_because1)
