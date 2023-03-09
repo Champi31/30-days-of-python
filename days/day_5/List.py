@@ -1,5 +1,5 @@
 print ([])
-compra = ['patatas', 'avichueltas', 'cebolla', 'pepino', 'brocoli', 'lechuga', 'garbanzo']
+compra = ['patatas', 'avichuels', 'cebolla', 'pepino', 'brocoli', 'lechuga', 'garbanzo']
 print (compra)
 print (len(compra))
 print (compra[0])
@@ -15,4 +15,25 @@ print (it_companies[-1])
 it_companies[3] = 'Android'
 print (it_companies)
 it_companies.insert(7, 'IT')
+print (it_companies)
+it_companies.sort()
+print (it_companies)
+it_companies.reverse()
+print (it_companies)
+first_three_items = it_companies[0:3]
+print (first_three_items)
+last_three_times = it_companies[6:8]
+print (last_three_times)
+print (it_companies[3:4])
+it_companies.remove('Oracle')
+print (it_companies)
+it_companies.remove('Google')
+print (it_companies)
+it_companies.remove('Amazon')
+print (it_companies)
+it_companies.remove('Microsft')
+it_companies.remove('IT')
+it_companies.remove('IBM')
+it_companies.remove('Facebook')
+it_companies.remove('Android')
 print (it_companies)
