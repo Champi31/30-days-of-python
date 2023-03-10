@@ -25,10 +25,17 @@ print (first_three_items)
 last_three_times = it_companies[6:8]
 print (last_three_times)
 print (it_companies[3:4])
-it_companies.pop(0)
+it_companies.remove('Oracle')
 print (it_companies)
-it_companies.pop(3)
+it_companies.remove('Google')
 print (it_companies)
-it_companies.pop(-1)
+it_companies.remove('Amazon')
 print (it_companies)
 print (it_companies.clear())
+del it_companies
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node', 'Express', 'MongoDB']
+Added = ['Python', 'SQL']
+front_end.extend(Added)
+front_end.extend(back_end)
+print ('Full_stack:', front_end)
