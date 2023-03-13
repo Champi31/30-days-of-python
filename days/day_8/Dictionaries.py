@@ -27,6 +27,7 @@ print (type(students_dct['Skills']))
 print (students_dct.keys())
 print (students_dct.values())
 students_lst = students_dct.items()
+print (students_dct)
 print (students_lst)
 students_dct.popitem()
 del students_dct['Marital_Status']
