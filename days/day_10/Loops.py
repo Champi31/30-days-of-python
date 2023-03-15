@@ -3,9 +3,11 @@ while count < 11:
     print (count)
     count = count + 1
 count = 10
+print (' ')
 while count > -1:
     print (count)
     count = count - 1
+print (' ')
 for i in range(0, 7):
     for n in range(0, i+1):
         print('# ',end='')
@@ -23,15 +25,18 @@ for lang in ['Python', 'Numpy', 'Pandas', 'Django', 'Flask']:
 for i in range(0, 101):
     if i % 2 == 0:
         print(i)
+print (' ')
 for i in range(0, 101):
     if i % 2 != 0:
         print(i)
+print (' ')
 sum_nums = 0
 for i in range(0, 101):
     sum_nums += i
 print("The sum of all numbers is", sum_nums)
 even_sum = 0
 odd_sum = 0
+print (' ')
 for i in range(0, 101):
     if i % 2 == 0:
         even_sum +=  i
@@ -39,6 +44,7 @@ for i in range(0, 101):
         odd_sum += i
 print("The sum of all even numbers is", even_sum)
 print("The sum of all odd numbers is", odd_sum)
+print (' ')
 countries = [
   'Afghanistan',
   'Albania',
