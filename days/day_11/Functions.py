@@ -37,6 +37,7 @@ print (print_list('hello'))
 def reverse_list (a):
     return a[::-1]  
 print (reverse_list([1, 2, 3, 4, 5])) 
+
 def capitalize_list_items(lst):
     result=[]
     if(len(lst) > 0):
