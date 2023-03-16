@@ -3,7 +3,8 @@ def add_two_numbers (a, b):
 print (add_two_numbers(5, 10))
 
 def area_of_circle (r):
-    return 3.14 * r * r
+    Pi = 3.14
+    return Pi * r ** 2
 print (area_of_circle(5))
 
 def add_all_nums (*nums):
@@ -49,7 +50,7 @@ print (capitalize_list_items(['pineaple', 'apple', 'banana', 'watermelon']))
 
 def add_item (lst,item):
     if(isinstance(lst,list)):
-        if(item!=None):
+        if(item!=False):
             lst.append(item)
     return lst
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
@@ -58,11 +59,11 @@ numbers = [2, 3, 7, 9]
 print(add_item(numbers, 5))
 
 def remove_item (lst,item):
-    if(isinstance(lst,list)) and len(lst)>0:
-        if(item!=None):
+    if(isinstance(lst,list)) and len(lst) > 0:
+        if(item!=False):
             lst.remove(item)
     return lst
-food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+foods_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
 print(remove_item(food_staff, 'Mango'))
 numbers = [2, 3, 7, 9]
 print(remove_item(numbers, 3))
@@ -77,23 +78,23 @@ print(sum_of_number(5))
 print(sum_of_number(10))
 print(sum_of_number(100))
 
-def is_prime (num):
-    flag = True
-    if(type(num) is int):
-        if(num > 1):
-            for i in range(2, int(num/2) + 1):
+def is_prime (number):
+    prime = True
+    if(type(number) is int):
+        if(number > 1):
+            for i in range(2, int(number/2) + 1):
                 if(i %2 == 0):
-                    flag == False
+                    prime == False
                     break
-        else: flag = False
-    else: flag = False
-    return flag
-print (is_prime(2))
+        else: prime = False
+    else: prime = False
+    return prime
+print (is_prime(8))
 
 def is_unique (lst):
-    test_set = set()
-    test_set.update(lst)
-    if(len(test_set) == len(lst)):
+    test = set()
+    test.update(lst)
+    if(len(test) == len(lst)):
         return True
     return False
 list1 = [1,2,3,4]
